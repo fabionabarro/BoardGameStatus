@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import com.eventos.repository.BoardGameRepository;
 
+import java.util.ArrayList;
+
 
 @RestController
 @RequestMapping("/boardgame")
@@ -27,12 +29,18 @@ public class BoardgameResource {
 //		return board;
 //	}
 	@GetMapping(value="/{nome}", produces="application/json")
-	public @ResponseBody boardgameinfo boardname(@PathVariable(value="nome") String nome){
+	public @ResponseBody
+	ArrayList<boardgameinfo> boardname(@PathVariable(value="nome") String nome){
 		return br.findByNomeContainingIgnoreCase(nome);
 	}
 
 	@PostMapping()
 	public boardgameinfo cadastraBoardgame(@RequestBody @Valid boardgameinfo boardGameInfo){
+		br.save(boardGameInfo);
+		return boardGameInfo;
+	}
+	@PutMapping
+	public boardgameinfo alteraBoardgame(@RequestBody boardgameinfo boardGameInfo) {
 		br.save(boardGameInfo);
 		return boardGameInfo;
 	}
@@ -42,4 +50,5 @@ public class BoardgameResource {
 		br.delete(boardGameInfo);
 		return boardGameInfo;
 	}
+
 }
