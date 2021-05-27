@@ -1,38 +1,35 @@
-package com.eventos.models;
+package com.eventos.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+
+import com.eventos.models.BoardGameInfoDTO;
 import org.hibernate.validator.constraints.NotBlank;
 
 @Entity
-public class boardgameinfo {
+@Table(name="boardgameinfo")
+public class BoardGameInfo {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long codigo;
-	
 	@NotBlank
 	private String nome;
-	
 	@NotBlank
 	private String minPlayers;
-	
 	@NotBlank
 	private String maxPlayers;
-	
 	@NotBlank
 	private String anoLancamento;
-
+	@NotBlank
+	private String descricao;
 	@NotBlank
 	private String publicadora;
-
 	@NotBlank
 	private String img;
 
-	@NotBlank
-	private String categoria;
+	public String getDescricao() {return descricao;	}
+
+	public void setDescricao(String descricao) {this.descricao = descricao;	}
 
 	public long getCodigo() {return codigo;	}
 
@@ -62,7 +59,36 @@ public class boardgameinfo {
 
 	public void setImg(String img) {this.img = img;	}
 
-	public String getCategoria() {return categoria;	}
 
-	public void setCategoria(String categoria) {this.categoria = categoria;	}
+
+	public BoardGameInfo() {
+
+	}
+
+	public BoardGameInfo(BoardGameInfoDTO boardGameInfoDTO) {
+		this.codigo = boardGameInfoDTO.getCodigo();
+		this.nome = boardGameInfoDTO.getNome();
+		this.minPlayers = boardGameInfoDTO.getMinPlayers();
+		this.maxPlayers = boardGameInfoDTO.getMaxPlayers();
+		this.anoLancamento = boardGameInfoDTO.getAnoLancamento();
+		this.descricao = boardGameInfoDTO.getDescricao();
+		this.publicadora = boardGameInfoDTO.getPublicadora();
+		this.img = boardGameInfoDTO.getImg();
+
+	}
+
+	@Override
+	public String toString() {
+		return "boardgameinfo{" +
+				"codigo=" + codigo +
+				", nome='" + nome + '\'' +
+				", minPlayers='" + minPlayers + '\'' +
+				", maxPlayers='" + maxPlayers + '\'' +
+				", anoLancamento='" + anoLancamento + '\'' +
+				", descricao='" + descricao + '\'' +
+				", publicadora='" + publicadora + '\'' +
+				", img='" + img + '\'' +
+
+				'}';
+	}
 }
