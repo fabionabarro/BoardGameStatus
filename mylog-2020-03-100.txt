@@ -1,0 +1,593 @@
+10-03-2020 10:39:49.096 - INFO  - com.eventos.BoardgameApplication.logStarting - Starting BoardgameApplication on TSP3570967 with PID 10188 (C:\Workspace\BoardGameStatus\target\classes started by Administrador in C:\Workspace\BoardGameStatus)
+10-03-2020 10:39:49.106 - INFO  - com.eventos.BoardgameApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+10-03-2020 10:39:49.177 - INFO  - org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3160294: startup date [Tue Mar 10 10:39:49 BRT 2020]; root of context hierarchy
+10-03-2020 10:39:49.311 - INFO  - org.hibernate.validator.internal.util.Version.<clinit> - HV000001: Hibernate Validator 5.3.5.Final
+10-03-2020 10:39:51.158 - INFO  - org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.initialize - Tomcat initialized with port(s): 8081 (http)
+10-03-2020 10:39:51.172 - INFO  - org.apache.catalina.core.StandardService.log - Starting service [Tomcat]
+10-03-2020 10:39:51.174 - INFO  - org.apache.catalina.core.StandardEngine.log - Starting Servlet Engine: Apache Tomcat/8.5.20
+10-03-2020 10:39:51.414 - INFO  - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+10-03-2020 10:39:51.414 - INFO  - org.springframework.web.context.ContextLoader.prepareEmbeddedWebApplicationContext - Root WebApplicationContext: initialization completed in 2237 ms
+10-03-2020 10:39:51.534 - INFO  - org.springframework.boot.web.servlet.ServletRegistrationBean.onStartup - Mapping servlet: 'dispatcherServlet' to [/]
+10-03-2020 10:39:51.538 - INFO  - org.springframework.boot.web.servlet.FilterRegistrationBean.configure - Mapping filter: 'characterEncodingFilter' to: [/*]
+10-03-2020 10:39:51.539 - INFO  - org.springframework.boot.web.servlet.FilterRegistrationBean.configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+10-03-2020 10:39:51.539 - INFO  - org.springframework.boot.web.servlet.FilterRegistrationBean.configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+10-03-2020 10:39:51.540 - INFO  - org.springframework.boot.web.servlet.FilterRegistrationBean.configure - Mapping filter: 'requestContextFilter' to: [/*]
+10-03-2020 10:39:51.606 - INFO  - org.springframework.jdbc.datasource.DriverManagerDataSource.setDriverClassName - Loaded JDBC driver: com.mysql.jdbc.Driver
+10-03-2020 10:39:52.022 - INFO  - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory - Building JPA container EntityManagerFactory for persistence unit 'default'
+10-03-2020 10:39:52.036 - INFO  - org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+10-03-2020 10:39:52.123 - INFO  - org.hibernate.Version.logVersion - HHH000412: Hibernate Core {5.0.12.Final}
+10-03-2020 10:39:52.124 - INFO  - org.hibernate.cfg.Environment.<clinit> - HHH000206: hibernate.properties not found
+10-03-2020 10:39:52.125 - INFO  - org.hibernate.cfg.Environment.buildBytecodeProvider - HHH000021: Bytecode provider name : javassist
+10-03-2020 10:39:52.180 - INFO  - org.hibernate.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10-03-2020 10:39:52.343 - INFO  - org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+10-03-2020 10:39:52.991 - INFO  - org.hibernate.tool.hbm2ddl.SchemaUpdate.execute - HHH000228: Running hbm2ddl schema update
+10-03-2020 10:39:53.634 - INFO  - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+10-03-2020 10:39:54.315 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3160294: startup date [Tue Mar 10 10:39:49 BRT 2020]; root of context hierarchy
+10-03-2020 10:39:54.397 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/boardgame],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.eventos.models.BoardGameInfoDTO>> com.eventos.controller.BoardgameController.listaBoardgames()
+10-03-2020 10:39:54.400 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/boardgame/{nome}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.eventos.models.BoardGameInfoDTO>> com.eventos.controller.BoardgameController.boardname(java.lang.String)
+10-03-2020 10:39:54.401 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/boardgame],methods=[POST]}" onto public com.eventos.models.BoardGameInfoDTO com.eventos.controller.BoardgameController.cadastraBoardgame(com.eventos.models.BoardGameInfoDTO)
+10-03-2020 10:39:54.402 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+10-03-2020 10:39:54.402 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+10-03-2020 10:39:54.438 - INFO  - org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10-03-2020 10:39:54.439 - INFO  - org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10-03-2020 10:39:54.488 - INFO  - org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10-03-2020 10:39:54.703 - INFO  - org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
+10-03-2020 10:39:54.744 - INFO  - org.springframework.jmx.export.annotation.AnnotationMBeanExporter.afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+10-03-2020 10:39:54.762 - INFO  - org.apache.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8081"]
+10-03-2020 10:39:54.771 - INFO  - org.apache.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8081"]
+10-03-2020 10:39:54.782 - INFO  - org.apache.tomcat.util.net.NioSelectorPool.log - Using a shared selector for servlet write/read
+10-03-2020 10:39:54.810 - INFO  - org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start - Tomcat started on port(s): 8081 (http)
+10-03-2020 10:39:54.816 - INFO  - com.eventos.BoardgameApplication.logStarted - Started BoardgameApplication in 6.053 seconds (JVM running for 7.351)
+10-03-2020 10:39:54.816 - INFO  - com.eventos.BoardgameApplication.main - Application Started
+10-03-2020 10:40:17.413 - INFO  - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log - Initializing Spring FrameworkServlet 'dispatcherServlet'
+10-03-2020 10:40:17.414 - INFO  - org.springframework.web.servlet.DispatcherServlet.initServletBean - FrameworkServlet 'dispatcherServlet': initialization started
+10-03-2020 10:40:17.453 - INFO  - org.springframework.web.servlet.DispatcherServlet.initServletBean - FrameworkServlet 'dispatcherServlet': initialization completed in 39 ms
+10-03-2020 10:40:17.562 - INFO  - org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService - HHH000397: Using ASTQueryTranslatorFactory
+10-03-2020 10:40:24.617 - INFO  - com.eventos.controller.BoardgameController.listaBoardgames - GET info[BoardGameInfoDTO{codigo=1, nome='Arcadia Quest', minPlayers='2', maxPlayers='4', anoLancamento='2014', descricao='', publicadora='Galapagos', img='imgjpg', categoria='aventura'}, BoardGameInfoDTO{codigo=2, nome='Dominion', minPlayers='2', maxPlayers='4', anoLancamento='2008', descricao='', publicadora='999 games', img='img.jpg', categoria='estrategia'}, BoardGameInfoDTO{codigo=23, nome='DDDDD', minPlayers='2', maxPlayers='4', anoLancamento='1999', descricao='aaaa', publicadora='aaaa', img='aaaa', categoria='aaaa'}]
+10-03-2020 10:41:09.974 - INFO  - com.eventos.controller.BoardgameController.cadastraBoardgame - POST BoardGameInfoDTO{codigo=0, nome='DDDDD', minPlayers='2', maxPlayers='4', anoLancamento='1999', descricao='aaaa', publicadora='aaaa', img='aaaa', categoria='aaaa'}
+10-03-2020 10:42:32.282 - INFO  - com.eventos.controller.BoardgameController.listaBoardgames - GET info[BoardGameInfoDTO{codigo=1, nome='Arcadia Quest', minPlayers='2', maxPlayers='4', anoLancamento='2014', descricao='', publicadora='Galapagos', img='imgjpg', categoria='aventura'}, BoardGameInfoDTO{codigo=2, nome='Dominion', minPlayers='2', maxPlayers='4', anoLancamento='2008', descricao='', publicadora='999 games', img='img.jpg', categoria='estrategia'}, BoardGameInfoDTO{codigo=23, nome='DDDDD', minPlayers='2', maxPlayers='4', anoLancamento='1999', descricao='aaaa', publicadora='aaaa', img='aaaa', categoria='aaaa'}]
+10-03-2020 10:58:33.728 - INFO  - com.eventos.BoardgameApplication.logStarting - Starting BoardgameApplication on TSP3570967 with PID 4068 (C:\Workspace\BoardGameStatus\target\classes started by Administrador in C:\Workspace\BoardGameStatus)
+10-03-2020 10:58:33.770 - INFO  - com.eventos.BoardgameApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+10-03-2020 10:58:33.822 - INFO  - org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4bcd48b3: startup date [Tue Mar 10 10:58:33 BRT 2020]; root of context hierarchy
+10-03-2020 10:58:33.937 - INFO  - org.hibernate.validator.internal.util.Version.<clinit> - HV000001: Hibernate Validator 5.3.5.Final
+10-03-2020 10:58:35.622 - INFO  - org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.initialize - Tomcat initialized with port(s): 8081 (http)
+10-03-2020 10:58:35.630 - INFO  - org.apache.catalina.core.StandardService.log - Starting service [Tomcat]
+10-03-2020 10:58:35.631 - INFO  - org.apache.catalina.core.StandardEngine.log - Starting Servlet Engine: Apache Tomcat/8.5.20
+10-03-2020 10:58:35.760 - INFO  - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+10-03-2020 10:58:35.761 - INFO  - org.springframework.web.context.ContextLoader.prepareEmbeddedWebApplicationContext - Root WebApplicationContext: initialization completed in 1939 ms
+10-03-2020 10:58:35.873 - INFO  - org.springframework.boot.web.servlet.ServletRegistrationBean.onStartup - Mapping servlet: 'dispatcherServlet' to [/]
+10-03-2020 10:58:35.875 - INFO  - org.springframework.boot.web.servlet.FilterRegistrationBean.configure - Mapping filter: 'characterEncodingFilter' to: [/*]
+10-03-2020 10:58:35.876 - INFO  - org.springframework.boot.web.servlet.FilterRegistrationBean.configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+10-03-2020 10:58:35.876 - INFO  - org.springframework.boot.web.servlet.FilterRegistrationBean.configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+10-03-2020 10:58:35.876 - INFO  - org.springframework.boot.web.servlet.FilterRegistrationBean.configure - Mapping filter: 'requestContextFilter' to: [/*]
+10-03-2020 10:58:35.904 - INFO  - org.springframework.jdbc.datasource.DriverManagerDataSource.setDriverClassName - Loaded JDBC driver: com.mysql.jdbc.Driver
+10-03-2020 10:58:36.269 - INFO  - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory - Building JPA container EntityManagerFactory for persistence unit 'default'
+10-03-2020 10:58:36.281 - INFO  - org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+10-03-2020 10:58:36.380 - INFO  - org.hibernate.Version.logVersion - HHH000412: Hibernate Core {5.0.12.Final}
+10-03-2020 10:58:36.381 - INFO  - org.hibernate.cfg.Environment.<clinit> - HHH000206: hibernate.properties not found
+10-03-2020 10:58:36.382 - INFO  - org.hibernate.cfg.Environment.buildBytecodeProvider - HHH000021: Bytecode provider name : javassist
+10-03-2020 10:58:36.414 - INFO  - org.hibernate.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10-03-2020 10:58:36.499 - INFO  - org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+10-03-2020 10:58:36.947 - INFO  - org.hibernate.tool.hbm2ddl.SchemaUpdate.execute - HHH000228: Running hbm2ddl schema update
+10-03-2020 10:58:37.777 - INFO  - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+10-03-2020 10:58:38.239 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4bcd48b3: startup date [Tue Mar 10 10:58:33 BRT 2020]; root of context hierarchy
+10-03-2020 10:58:38.309 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/boardgame],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.eventos.models.BoardGameInfoDTO>> com.eventos.controller.BoardgameController.listaBoardgames()
+10-03-2020 10:58:38.313 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/boardgame/{nome}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.eventos.models.BoardGameInfoDTO>> com.eventos.controller.BoardgameController.boardname(java.lang.String)
+10-03-2020 10:58:38.314 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/boardgame],methods=[POST]}" onto public com.eventos.models.BoardGameInfoDTO com.eventos.controller.BoardgameController.cadastraBoardgame(com.eventos.models.BoardGameInfoDTO)
+10-03-2020 10:58:38.316 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+10-03-2020 10:58:38.317 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+10-03-2020 10:58:38.356 - INFO  - org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10-03-2020 10:58:38.356 - INFO  - org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10-03-2020 10:58:38.406 - INFO  - org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10-03-2020 10:58:38.669 - INFO  - org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
+10-03-2020 10:58:38.724 - INFO  - org.springframework.jmx.export.annotation.AnnotationMBeanExporter.afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+10-03-2020 10:58:38.742 - INFO  - org.apache.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8081"]
+10-03-2020 10:58:38.751 - INFO  - org.apache.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8081"]
+10-03-2020 10:58:38.763 - INFO  - org.apache.tomcat.util.net.NioSelectorPool.log - Using a shared selector for servlet write/read
+10-03-2020 10:58:38.783 - INFO  - org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start - Tomcat started on port(s): 8081 (http)
+10-03-2020 10:58:38.789 - INFO  - com.eventos.BoardgameApplication.logStarted - Started BoardgameApplication in 5.282 seconds (JVM running for 6.276)
+10-03-2020 10:58:38.790 - INFO  - com.eventos.BoardgameApplication.main - Application Started
+10-03-2020 10:58:50.147 - INFO  - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log - Initializing Spring FrameworkServlet 'dispatcherServlet'
+10-03-2020 10:58:50.148 - INFO  - org.springframework.web.servlet.DispatcherServlet.initServletBean - FrameworkServlet 'dispatcherServlet': initialization started
+10-03-2020 10:58:50.179 - INFO  - org.springframework.web.servlet.DispatcherServlet.initServletBean - FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
+10-03-2020 10:58:50.485 - INFO  - com.eventos.controller.BoardgameController.cadastraBoardgame - POST BoardGameInfoDTO{codigo=0, nome='kkkkk', minPlayers='2', maxPlayers='4', anoLancamento='1999', descricao='aaaa', publicadora='aaaa', img='aaaa', categoria='aaaa'}
+10-03-2020 10:59:13.726 - INFO  - com.eventos.controller.BoardgameController.cadastraBoardgame - POST BoardGameInfoDTO{codigo=0, nome='kkkkk', minPlayers='2', maxPlayers='4', anoLancamento='1999', descricao='aaaa', publicadora='aaaa', img='aaaa', categoria='aaaa'}
+10-03-2020 10:59:45.739 - INFO  - com.eventos.controller.BoardgameController.cadastraBoardgame - POST BoardGameInfoDTO{codigo=26, nome='DDDDD', minPlayers='2', maxPlayers='4', anoLancamento='1999', descricao='aaaa', publicadora='aaaa', img='aaaa', categoria='aaaa'}
+10-03-2020 11:01:16.451 - INFO  - com.eventos.controller.BoardgameController.cadastraBoardgame - POST BoardGameInfoDTO{codigo=0, nome='eeeeeee', minPlayers='2', maxPlayers='4', anoLancamento='1999', descricao='aaaa', publicadora='aaaa', img='aaaa', categoria='aaaa'}
+10-03-2020 11:06:04.819 - INFO  - com.eventos.BoardgameApplication.logStarting - Starting BoardgameApplication on TSP3570967 with PID 1672 (C:\Workspace\BoardGameStatus\target\classes started by Administrador in C:\Workspace\BoardGameStatus)
+10-03-2020 11:06:04.822 - INFO  - com.eventos.BoardgameApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+10-03-2020 11:06:04.880 - INFO  - org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@10862c5a: startup date [Tue Mar 10 11:06:04 BRT 2020]; root of context hierarchy
+10-03-2020 11:06:05.057 - INFO  - org.hibernate.validator.internal.util.Version.<clinit> - HV000001: Hibernate Validator 5.3.5.Final
+10-03-2020 11:06:06.741 - INFO  - org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.initialize - Tomcat initialized with port(s): 8081 (http)
+10-03-2020 11:06:06.753 - INFO  - org.apache.catalina.core.StandardService.log - Starting service [Tomcat]
+10-03-2020 11:06:06.754 - INFO  - org.apache.catalina.core.StandardEngine.log - Starting Servlet Engine: Apache Tomcat/8.5.20
+10-03-2020 11:06:06.916 - INFO  - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+10-03-2020 11:06:06.917 - INFO  - org.springframework.web.context.ContextLoader.prepareEmbeddedWebApplicationContext - Root WebApplicationContext: initialization completed in 2037 ms
+10-03-2020 11:06:07.048 - INFO  - org.springframework.boot.web.servlet.ServletRegistrationBean.onStartup - Mapping servlet: 'dispatcherServlet' to [/]
+10-03-2020 11:06:07.051 - INFO  - org.springframework.boot.web.servlet.FilterRegistrationBean.configure - Mapping filter: 'characterEncodingFilter' to: [/*]
+10-03-2020 11:06:07.051 - INFO  - org.springframework.boot.web.servlet.FilterRegistrationBean.configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+10-03-2020 11:06:07.052 - INFO  - org.springframework.boot.web.servlet.FilterRegistrationBean.configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+10-03-2020 11:06:07.052 - INFO  - org.springframework.boot.web.servlet.FilterRegistrationBean.configure - Mapping filter: 'requestContextFilter' to: [/*]
+10-03-2020 11:06:07.091 - INFO  - org.springframework.jdbc.datasource.DriverManagerDataSource.setDriverClassName - Loaded JDBC driver: com.mysql.jdbc.Driver
+10-03-2020 11:06:07.455 - INFO  - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory - Building JPA container EntityManagerFactory for persistence unit 'default'
+10-03-2020 11:06:07.465 - INFO  - org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+10-03-2020 11:06:07.523 - INFO  - org.hibernate.Version.logVersion - HHH000412: Hibernate Core {5.0.12.Final}
+10-03-2020 11:06:07.524 - INFO  - org.hibernate.cfg.Environment.<clinit> - HHH000206: hibernate.properties not found
+10-03-2020 11:06:07.525 - INFO  - org.hibernate.cfg.Environment.buildBytecodeProvider - HHH000021: Bytecode provider name : javassist
+10-03-2020 11:06:07.557 - INFO  - org.hibernate.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10-03-2020 11:06:07.640 - INFO  - org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+10-03-2020 11:06:08.036 - INFO  - org.hibernate.tool.hbm2ddl.SchemaUpdate.execute - HHH000228: Running hbm2ddl schema update
+10-03-2020 11:06:08.611 - INFO  - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+10-03-2020 11:06:09.171 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@10862c5a: startup date [Tue Mar 10 11:06:04 BRT 2020]; root of context hierarchy
+10-03-2020 11:06:09.223 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/boardgame/{nome}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.eventos.models.BoardGameInfoDTO>> com.eventos.controller.BoardgameController.boardname(java.lang.String)
+10-03-2020 11:06:09.224 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/boardgame],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.eventos.models.BoardGameInfoDTO>> com.eventos.controller.BoardgameController.listaBoardgames()
+10-03-2020 11:06:09.225 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/boardgame],methods=[POST]}" onto public com.eventos.models.BoardGameInfoDTO com.eventos.controller.BoardgameController.cadastraBoardgame(com.eventos.models.BoardGameInfoDTO)
+10-03-2020 11:06:09.226 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+10-03-2020 11:06:09.227 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+10-03-2020 11:06:09.264 - INFO  - org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10-03-2020 11:06:09.265 - INFO  - org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10-03-2020 11:06:09.304 - INFO  - org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10-03-2020 11:06:09.512 - INFO  - org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
+10-03-2020 11:06:09.564 - INFO  - org.springframework.jmx.export.annotation.AnnotationMBeanExporter.afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+10-03-2020 11:06:09.579 - INFO  - org.apache.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8081"]
+10-03-2020 11:06:09.588 - INFO  - org.apache.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8081"]
+10-03-2020 11:06:09.599 - INFO  - org.apache.tomcat.util.net.NioSelectorPool.log - Using a shared selector for servlet write/read
+10-03-2020 11:06:09.614 - INFO  - org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start - Tomcat started on port(s): 8081 (http)
+10-03-2020 11:06:09.619 - INFO  - com.eventos.BoardgameApplication.logStarted - Started BoardgameApplication in 5.018 seconds (JVM running for 5.87)
+10-03-2020 11:06:09.620 - INFO  - com.eventos.BoardgameApplication.main - Application Started
+10-03-2020 11:06:23.272 - INFO  - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log - Initializing Spring FrameworkServlet 'dispatcherServlet'
+10-03-2020 11:06:23.273 - INFO  - org.springframework.web.servlet.DispatcherServlet.initServletBean - FrameworkServlet 'dispatcherServlet': initialization started
+10-03-2020 11:06:23.308 - INFO  - org.springframework.web.servlet.DispatcherServlet.initServletBean - FrameworkServlet 'dispatcherServlet': initialization completed in 35 ms
+10-03-2020 11:06:23.537 - INFO  - com.eventos.controller.BoardgameController.cadastraBoardgame - POST BoardGameInfoDTO{codigo=28, nome='fffffff', minPlayers='2', maxPlayers='4', anoLancamento='1999', descricao='aaaa', publicadora='aaaa', img='aaaa', categoria='aaaa'}
+10-03-2020 14:07:23.087 - INFO  - org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService - HHH000397: Using ASTQueryTranslatorFactory
+10-03-2020 14:07:23.304 - INFO  - com.eventos.controller.BoardgameController.listaBoardgames - GET info[BoardGameInfoDTO{codigo=1, nome='Arcadia Quest', minPlayers='2', maxPlayers='4', anoLancamento='2014', descricao='', publicadora='Galapagos', img='imgjpg', categoria='aventura'}, BoardGameInfoDTO{codigo=2, nome='Dominion', minPlayers='2', maxPlayers='4', anoLancamento='2008', descricao='', publicadora='999 games', img='img.jpg', categoria='estrategia'}, BoardGameInfoDTO{codigo=23, nome='DDDDD', minPlayers='2', maxPlayers='4', anoLancamento='1999', descricao='aaaa', publicadora='aaaa', img='aaaa', categoria='aaaa'}, BoardGameInfoDTO{codigo=25, nome='kkkkk', minPlayers='2', maxPlayers='4', anoLancamento='1999', descricao='aaaa', publicadora='aaaa', img='aaaa', categoria='aaaa'}, BoardGameInfoDTO{codigo=26, nome='DDDDD', minPlayers='2', maxPlayers='4', anoLancamento='1999', descricao='aaaa', publicadora='aaaa', img='aaaa', categoria='aaaa'}, BoardGameInfoDTO{codigo=27, nome='eeeeeee', minPlayers='2', maxPlayers='4', anoLancamento='1999', descricao='aaaa', publicadora='aaaa', img='aaaa', categoria='aaaa'}, BoardGameInfoDTO{codigo=28, nome='fffffff', minPlayers='2', maxPlayers='4', anoLancamento='1999', descricao='aaaa', publicadora='aaaa', img='aaaa', categoria='aaaa'}]
+10-03-2020 14:08:26.374 - INFO  - com.eventos.controller.BoardgameController.listaBoardgames - GET info[BoardGameInfoDTO{codigo=1, nome='Arcadia Quest', minPlayers='2', maxPlayers='4', anoLancamento='2014', descricao='', publicadora='Galapagos', img='imgjpg', categoria='aventura'}, BoardGameInfoDTO{codigo=2, nome='Dominion', minPlayers='2', maxPlayers='4', anoLancamento='2008', descricao='', publicadora='999 games', img='img.jpg', categoria='estrategia'}, BoardGameInfoDTO{codigo=23, nome='DDDDD', minPlayers='2', maxPlayers='4', anoLancamento='1999', descricao='aaaa', publicadora='aaaa', img='aaaa', categoria='aaaa'}, BoardGameInfoDTO{codigo=25, nome='kkkkk', minPlayers='2', maxPlayers='4', anoLancamento='1999', descricao='aaaa', publicadora='aaaa', img='aaaa', categoria='aaaa'}, BoardGameInfoDTO{codigo=26, nome='DDDDD', minPlayers='2', maxPlayers='4', anoLancamento='1999', descricao='aaaa', publicadora='aaaa', img='aaaa', categoria='aaaa'}, BoardGameInfoDTO{codigo=27, nome='eeeeeee', minPlayers='2', maxPlayers='4', anoLancamento='1999', descricao='aaaa', publicadora='aaaa', img='aaaa', categoria='aaaa'}, BoardGameInfoDTO{codigo=28, nome='fffffff', minPlayers='2', maxPlayers='4', anoLancamento='1999', descricao='aaaa', publicadora='aaaa', img='aaaa', categoria='aaaa'}]
+10-03-2020 15:05:57.911 - INFO  - com.eventos.BoardgameApplication.logStarting - Starting BoardgameApplication on TSP3570967 with PID 9760 (C:\Workspace\BoardGameStatus\target\classes started by Administrador in C:\Workspace\BoardGameStatus)
+10-03-2020 15:05:57.915 - INFO  - com.eventos.BoardgameApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+10-03-2020 15:05:57.967 - INFO  - org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2f97c8e0: startup date [Tue Mar 10 15:05:57 BRT 2020]; root of context hierarchy
+10-03-2020 15:05:58.076 - INFO  - org.hibernate.validator.internal.util.Version.<clinit> - HV000001: Hibernate Validator 5.3.5.Final
+10-03-2020 15:06:00.143 - INFO  - org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.initialize - Tomcat initialized with port(s): 8081 (http)
+10-03-2020 15:06:00.154 - INFO  - org.apache.catalina.core.StandardService.log - Starting service [Tomcat]
+10-03-2020 15:06:00.155 - INFO  - org.apache.catalina.core.StandardEngine.log - Starting Servlet Engine: Apache Tomcat/8.5.20
+10-03-2020 15:06:00.316 - INFO  - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+10-03-2020 15:06:00.317 - INFO  - org.springframework.web.context.ContextLoader.prepareEmbeddedWebApplicationContext - Root WebApplicationContext: initialization completed in 2350 ms
+10-03-2020 15:06:00.433 - INFO  - org.springframework.boot.web.servlet.ServletRegistrationBean.onStartup - Mapping servlet: 'dispatcherServlet' to [/]
+10-03-2020 15:06:00.436 - INFO  - org.springframework.boot.web.servlet.FilterRegistrationBean.configure - Mapping filter: 'characterEncodingFilter' to: [/*]
+10-03-2020 15:06:00.437 - INFO  - org.springframework.boot.web.servlet.FilterRegistrationBean.configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+10-03-2020 15:06:00.437 - INFO  - org.springframework.boot.web.servlet.FilterRegistrationBean.configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+10-03-2020 15:06:00.438 - INFO  - org.springframework.boot.web.servlet.FilterRegistrationBean.configure - Mapping filter: 'requestContextFilter' to: [/*]
+10-03-2020 15:06:00.481 - INFO  - org.springframework.jdbc.datasource.DriverManagerDataSource.setDriverClassName - Loaded JDBC driver: com.mysql.jdbc.Driver
+10-03-2020 15:06:00.940 - INFO  - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory - Building JPA container EntityManagerFactory for persistence unit 'default'
+10-03-2020 15:06:00.951 - INFO  - org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+10-03-2020 15:06:01.033 - INFO  - org.hibernate.Version.logVersion - HHH000412: Hibernate Core {5.0.12.Final}
+10-03-2020 15:06:01.034 - INFO  - org.hibernate.cfg.Environment.<clinit> - HHH000206: hibernate.properties not found
+10-03-2020 15:06:01.035 - INFO  - org.hibernate.cfg.Environment.buildBytecodeProvider - HHH000021: Bytecode provider name : javassist
+10-03-2020 15:06:01.100 - INFO  - org.hibernate.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10-03-2020 15:06:01.334 - INFO  - org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+10-03-2020 15:06:01.921 - INFO  - org.hibernate.tool.hbm2ddl.SchemaUpdate.execute - HHH000228: Running hbm2ddl schema update
+10-03-2020 15:06:02.618 - INFO  - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+10-03-2020 15:06:03.312 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2f97c8e0: startup date [Tue Mar 10 15:05:57 BRT 2020]; root of context hierarchy
+10-03-2020 15:06:03.372 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/boardgame],methods=[POST]}" onto public com.eventos.models.BoardGameInfoDTO com.eventos.controller.BoardgameController.cadastraBoardgame(com.eventos.models.BoardGameInfoDTO)
+10-03-2020 15:06:03.374 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/boardgame/{nome}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.eventos.models.BoardGameInfoDTO>> com.eventos.controller.BoardgameController.boardname(java.lang.String)
+10-03-2020 15:06:03.374 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/boardgame],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.eventos.models.BoardGameInfoDTO>> com.eventos.controller.BoardgameController.listaBoardgames()
+10-03-2020 15:06:03.376 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+10-03-2020 15:06:03.377 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+10-03-2020 15:06:03.408 - INFO  - org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10-03-2020 15:06:03.408 - INFO  - org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10-03-2020 15:06:03.441 - INFO  - org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10-03-2020 15:06:03.728 - INFO  - org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
+10-03-2020 15:06:03.777 - INFO  - org.springframework.jmx.export.annotation.AnnotationMBeanExporter.afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+10-03-2020 15:06:03.830 - INFO  - org.apache.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8081"]
+10-03-2020 15:06:03.842 - INFO  - org.apache.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8081"]
+10-03-2020 15:06:03.855 - INFO  - org.apache.tomcat.util.net.NioSelectorPool.log - Using a shared selector for servlet write/read
+10-03-2020 15:06:03.871 - INFO  - org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start - Tomcat started on port(s): 8081 (http)
+10-03-2020 15:06:03.874 - INFO  - com.eventos.BoardgameApplication.logStarted - Started BoardgameApplication in 6.238 seconds (JVM running for 7.326)
+10-03-2020 15:06:03.876 - INFO  - com.eventos.BoardgameApplication.main - Application Started
+10-03-2020 15:06:41.597 - INFO  - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log - Initializing Spring FrameworkServlet 'dispatcherServlet'
+10-03-2020 15:06:41.597 - INFO  - org.springframework.web.servlet.DispatcherServlet.initServletBean - FrameworkServlet 'dispatcherServlet': initialization started
+10-03-2020 15:06:41.632 - INFO  - org.springframework.web.servlet.DispatcherServlet.initServletBean - FrameworkServlet 'dispatcherServlet': initialization completed in 35 ms
+10-03-2020 15:06:41.707 - INFO  - org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService - HHH000397: Using ASTQueryTranslatorFactory
+10-03-2020 15:06:41.890 - INFO  - com.eventos.controller.BoardgameController.listaBoardgames - GET info[BoardGameInfoDTO{codigo=1, nome='Arcadia Quest', minPlayers='2', maxPlayers='4', anoLancamento='2014', descricao='', publicadora='Galapagos', img='imgjpg', categoria='aventura'}, BoardGameInfoDTO{codigo=2, nome='Dominion', minPlayers='2', maxPlayers='4', anoLancamento='2008', descricao='', publicadora='999 games', img='img.jpg', categoria='estrategia'}, BoardGameInfoDTO{codigo=23, nome='DDDDD', minPlayers='2', maxPlayers='4', anoLancamento='1999', descricao='aaaa', publicadora='aaaa', img='aaaa', categoria='aaaa'}, BoardGameInfoDTO{codigo=25, nome='kkkkk', minPlayers='2', maxPlayers='4', anoLancamento='1999', descricao='aaaa', publicadora='aaaa', img='aaaa', categoria='aaaa'}, BoardGameInfoDTO{codigo=26, nome='DDDDD', minPlayers='2', maxPlayers='4', anoLancamento='1999', descricao='aaaa', publicadora='aaaa', img='aaaa', categoria='aaaa'}, BoardGameInfoDTO{codigo=27, nome='eeeeeee', minPlayers='2', maxPlayers='4', anoLancamento='1999', descricao='aaaa', publicadora='aaaa', img='aaaa', categoria='aaaa'}, BoardGameInfoDTO{codigo=28, nome='fffffff', minPlayers='2', maxPlayers='4', anoLancamento='1999', descricao='aaaa', publicadora='aaaa', img='aaaa', categoria='aaaa'}]
+10-03-2020 16:31:47.723 - INFO  - com.eventos.BoardgameApplication.logStarting - Starting BoardgameApplication on TSP3570967 with PID 1844 (C:\Workspace\BoardGameStatus\target\classes started by Administrador in C:\Workspace\BoardGameStatus)
+10-03-2020 16:31:47.727 - INFO  - com.eventos.BoardgameApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+10-03-2020 16:31:47.776 - INFO  - org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@13593d60: startup date [Tue Mar 10 16:31:47 BRT 2020]; root of context hierarchy
+10-03-2020 16:31:47.912 - INFO  - org.hibernate.validator.internal.util.Version.<clinit> - HV000001: Hibernate Validator 5.3.5.Final
+10-03-2020 16:31:49.462 - INFO  - org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.initialize - Tomcat initialized with port(s): 8081 (http)
+10-03-2020 16:31:49.473 - INFO  - org.apache.catalina.core.StandardService.log - Starting service [Tomcat]
+10-03-2020 16:31:49.474 - INFO  - org.apache.catalina.core.StandardEngine.log - Starting Servlet Engine: Apache Tomcat/8.5.20
+10-03-2020 16:31:49.582 - INFO  - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+10-03-2020 16:31:49.582 - INFO  - org.springframework.web.context.ContextLoader.prepareEmbeddedWebApplicationContext - Root WebApplicationContext: initialization completed in 1806 ms
+10-03-2020 16:31:49.698 - INFO  - org.springframework.boot.web.servlet.ServletRegistrationBean.onStartup - Mapping servlet: 'dispatcherServlet' to [/]
+10-03-2020 16:31:49.701 - INFO  - org.springframework.boot.web.servlet.FilterRegistrationBean.configure - Mapping filter: 'characterEncodingFilter' to: [/*]
+10-03-2020 16:31:49.701 - INFO  - org.springframework.boot.web.servlet.FilterRegistrationBean.configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+10-03-2020 16:31:49.702 - INFO  - org.springframework.boot.web.servlet.FilterRegistrationBean.configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+10-03-2020 16:31:49.702 - INFO  - org.springframework.boot.web.servlet.FilterRegistrationBean.configure - Mapping filter: 'requestContextFilter' to: [/*]
+10-03-2020 16:31:49.737 - INFO  - org.springframework.jdbc.datasource.DriverManagerDataSource.setDriverClassName - Loaded JDBC driver: com.mysql.jdbc.Driver
+10-03-2020 16:31:50.103 - INFO  - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory - Building JPA container EntityManagerFactory for persistence unit 'default'
+10-03-2020 16:31:50.115 - INFO  - org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+10-03-2020 16:31:50.216 - INFO  - org.hibernate.Version.logVersion - HHH000412: Hibernate Core {5.0.12.Final}
+10-03-2020 16:31:50.218 - INFO  - org.hibernate.cfg.Environment.<clinit> - HHH000206: hibernate.properties not found
+10-03-2020 16:31:50.219 - INFO  - org.hibernate.cfg.Environment.buildBytecodeProvider - HHH000021: Bytecode provider name : javassist
+10-03-2020 16:31:50.268 - INFO  - org.hibernate.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10-03-2020 16:31:50.408 - INFO  - org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+10-03-2020 16:31:51.074 - INFO  - org.hibernate.tool.hbm2ddl.SchemaUpdate.execute - HHH000228: Running hbm2ddl schema update
+10-03-2020 16:31:51.411 - INFO  - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+10-03-2020 16:31:52.023 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@13593d60: startup date [Tue Mar 10 16:31:47 BRT 2020]; root of context hierarchy
+10-03-2020 16:31:52.116 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/boardgame],methods=[POST]}" onto public com.eventos.models.BoardGameInfoDTO com.eventos.controller.BoardgameController.cadastraBoardgame(com.eventos.models.BoardGameInfoDTO)
+10-03-2020 16:31:52.118 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/boardgame/{nome}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.eventos.models.BoardGameInfoDTO>> com.eventos.controller.BoardgameController.boardname(java.lang.String)
+10-03-2020 16:31:52.118 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/boardgame],methods=[DELETE]}" onto public com.eventos.models.BoardGameInfoDTO com.eventos.controller.BoardgameController.deletaBoardgame(com.eventos.models.BoardGameInfoDTO)
+10-03-2020 16:31:52.119 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/boardgame],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.eventos.models.BoardGameInfoDTO>> com.eventos.controller.BoardgameController.listaBoardgames()
+10-03-2020 16:31:52.120 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+10-03-2020 16:31:52.121 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+10-03-2020 16:31:52.159 - INFO  - org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10-03-2020 16:31:52.160 - INFO  - org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10-03-2020 16:31:52.205 - INFO  - org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10-03-2020 16:31:52.480 - INFO  - org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
+10-03-2020 16:31:52.533 - INFO  - org.springframework.jmx.export.annotation.AnnotationMBeanExporter.afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+10-03-2020 16:31:52.549 - INFO  - org.apache.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8081"]
+10-03-2020 16:31:52.559 - INFO  - org.apache.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8081"]
+10-03-2020 16:31:52.574 - INFO  - org.apache.tomcat.util.net.NioSelectorPool.log - Using a shared selector for servlet write/read
+10-03-2020 16:31:52.599 - INFO  - org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start - Tomcat started on port(s): 8081 (http)
+10-03-2020 16:31:52.607 - INFO  - com.eventos.BoardgameApplication.logStarted - Started BoardgameApplication in 5.074 seconds (JVM running for 6.087)
+10-03-2020 16:31:52.607 - INFO  - com.eventos.BoardgameApplication.main - Application Started
+10-03-2020 16:32:02.169 - INFO  - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log - Initializing Spring FrameworkServlet 'dispatcherServlet'
+10-03-2020 16:32:02.169 - INFO  - org.springframework.web.servlet.DispatcherServlet.initServletBean - FrameworkServlet 'dispatcherServlet': initialization started
+10-03-2020 16:32:02.191 - INFO  - org.springframework.web.servlet.DispatcherServlet.initServletBean - FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+10-03-2020 16:32:02.238 - INFO  - org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService - HHH000397: Using ASTQueryTranslatorFactory
+10-03-2020 16:32:02.339 - INFO  - com.eventos.controller.BoardgameController.listaBoardgames - GET info[BoardGameInfoDTO{codigo=1, nome='Arcadia Quest', minPlayers='2', maxPlayers='4', anoLancamento='2014', descricao='', publicadora='Galapagos', img='imgjpg', categoria='aventura'}, BoardGameInfoDTO{codigo=2, nome='Dominion', minPlayers='2', maxPlayers='4', anoLancamento='2008', descricao='', publicadora='999 games', img='img.jpg', categoria='estrategia'}, BoardGameInfoDTO{codigo=23, nome='DDDDD', minPlayers='2', maxPlayers='4', anoLancamento='1999', descricao='aaaa', publicadora='aaaa', img='aaaa', categoria='aaaa'}, BoardGameInfoDTO{codigo=25, nome='kkkkk', minPlayers='2', maxPlayers='4', anoLancamento='1999', descricao='aaaa', publicadora='aaaa', img='aaaa', categoria='aaaa'}, BoardGameInfoDTO{codigo=26, nome='DDDDD', minPlayers='2', maxPlayers='4', anoLancamento='1999', descricao='aaaa', publicadora='aaaa', img='aaaa', categoria='aaaa'}, BoardGameInfoDTO{codigo=27, nome='eeeeeee', minPlayers='2', maxPlayers='4', anoLancamento='1999', descricao='aaaa', publicadora='aaaa', img='aaaa', categoria='aaaa'}, BoardGameInfoDTO{codigo=28, nome='fffffff', minPlayers='2', maxPlayers='4', anoLancamento='1999', descricao='aaaa', publicadora='aaaa', img='aaaa', categoria='aaaa'}]
+10-03-2020 16:32:24.719 - INFO  - com.eventos.controller.BoardgameController.deletaBoardgame - POST BoardGameInfoDTO{codigo=28, nome='fffffff', minPlayers='2', maxPlayers='4', anoLancamento='1999', descricao='aaaa', publicadora='aaaa', img='aaaa', categoria='aaaa'}
+10-03-2020 16:32:39.619 - INFO  - com.eventos.controller.BoardgameController.listaBoardgames - GET info[BoardGameInfoDTO{codigo=1, nome='Arcadia Quest', minPlayers='2', maxPlayers='4', anoLancamento='2014', descricao='', publicadora='Galapagos', img='imgjpg', categoria='aventura'}, BoardGameInfoDTO{codigo=2, nome='Dominion', minPlayers='2', maxPlayers='4', anoLancamento='2008', descricao='', publicadora='999 games', img='img.jpg', categoria='estrategia'}, BoardGameInfoDTO{codigo=23, nome='DDDDD', minPlayers='2', maxPlayers='4', anoLancamento='1999', descricao='aaaa', publicadora='aaaa', img='aaaa', categoria='aaaa'}, BoardGameInfoDTO{codigo=25, nome='kkkkk', minPlayers='2', maxPlayers='4', anoLancamento='1999', descricao='aaaa', publicadora='aaaa', img='aaaa', categoria='aaaa'}, BoardGameInfoDTO{codigo=26, nome='DDDDD', minPlayers='2', maxPlayers='4', anoLancamento='1999', descricao='aaaa', publicadora='aaaa', img='aaaa', categoria='aaaa'}, BoardGameInfoDTO{codigo=27, nome='eeeeeee', minPlayers='2', maxPlayers='4', anoLancamento='1999', descricao='aaaa', publicadora='aaaa', img='aaaa', categoria='aaaa'}]
+10-03-2020 16:32:55.673 - WARN  - org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver.handleHttpMessageNotReadable - Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): was expecting double-quote to start field name; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('}' (code 125)): was expecting double-quote to start field name
+ at [Source: java.io.PushbackInputStream@1eb8279e; line: 4, column: 5]
+10-03-2020 16:32:55.673 - WARN  - org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver.logException - Resolved exception caused by Handler execution: org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): was expecting double-quote to start field name; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('}' (code 125)): was expecting double-quote to start field name
+ at [Source: java.io.PushbackInputStream@1eb8279e; line: 4, column: 5]
+10-03-2020 16:36:08.229 - INFO  - com.eventos.controller.BoardgameController.listaBoardgames - GET info[BoardGameInfoDTO{codigo=1, nome='Arcadia Quest', minPlayers='2', maxPlayers='4', anoLancamento='2014', descricao='', publicadora='Galapagos', img='imgjpg', categoria='aventura'}, BoardGameInfoDTO{codigo=2, nome='Dominion', minPlayers='2', maxPlayers='4', anoLancamento='2008', descricao='', publicadora='999 games', img='img.jpg', categoria='estrategia'}, BoardGameInfoDTO{codigo=23, nome='DDDDD', minPlayers='2', maxPlayers='4', anoLancamento='1999', descricao='aaaa', publicadora='aaaa', img='aaaa', categoria='aaaa'}, BoardGameInfoDTO{codigo=25, nome='kkkkk', minPlayers='2', maxPlayers='4', anoLancamento='1999', descricao='aaaa', publicadora='aaaa', img='aaaa', categoria='aaaa'}, BoardGameInfoDTO{codigo=26, nome='DDDDD', minPlayers='2', maxPlayers='4', anoLancamento='1999', descricao='aaaa', publicadora='aaaa', img='aaaa', categoria='aaaa'}, BoardGameInfoDTO{codigo=27, nome='eeeeeee', minPlayers='2', maxPlayers='4', anoLancamento='1999', descricao='aaaa', publicadora='aaaa', img='aaaa', categoria='aaaa'}]
+10-03-2020 16:59:49.195 - INFO  - com.eventos.BoardgameApplication.logStarting - Starting BoardgameApplication on TSP3570967 with PID 4288 (C:\Workspace\BoardGameStatus\target\classes started by Administrador in C:\Workspace\BoardGameStatus)
+10-03-2020 16:59:49.200 - INFO  - com.eventos.BoardgameApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+10-03-2020 16:59:49.263 - INFO  - org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@10862c5a: startup date [Tue Mar 10 16:59:49 BRT 2020]; root of context hierarchy
+10-03-2020 16:59:49.391 - INFO  - org.hibernate.validator.internal.util.Version.<clinit> - HV000001: Hibernate Validator 5.3.5.Final
+10-03-2020 16:59:50.986 - INFO  - org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.initialize - Tomcat initialized with port(s): 8081 (http)
+10-03-2020 16:59:50.998 - INFO  - org.apache.catalina.core.StandardService.log - Starting service [Tomcat]
+10-03-2020 16:59:50.999 - INFO  - org.apache.catalina.core.StandardEngine.log - Starting Servlet Engine: Apache Tomcat/8.5.20
+10-03-2020 16:59:51.098 - INFO  - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+10-03-2020 16:59:51.099 - INFO  - org.springframework.web.context.ContextLoader.prepareEmbeddedWebApplicationContext - Root WebApplicationContext: initialization completed in 1835 ms
+10-03-2020 16:59:51.227 - INFO  - org.springframework.boot.web.servlet.ServletRegistrationBean.onStartup - Mapping servlet: 'dispatcherServlet' to [/]
+10-03-2020 16:59:51.230 - INFO  - org.springframework.boot.web.servlet.FilterRegistrationBean.configure - Mapping filter: 'characterEncodingFilter' to: [/*]
+10-03-2020 16:59:51.231 - INFO  - org.springframework.boot.web.servlet.FilterRegistrationBean.configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+10-03-2020 16:59:51.231 - INFO  - org.springframework.boot.web.servlet.FilterRegistrationBean.configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+10-03-2020 16:59:51.231 - INFO  - org.springframework.boot.web.servlet.FilterRegistrationBean.configure - Mapping filter: 'requestContextFilter' to: [/*]
+10-03-2020 16:59:51.268 - INFO  - org.springframework.jdbc.datasource.DriverManagerDataSource.setDriverClassName - Loaded JDBC driver: com.mysql.jdbc.Driver
+10-03-2020 16:59:51.630 - INFO  - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory - Building JPA container EntityManagerFactory for persistence unit 'default'
+10-03-2020 16:59:51.642 - INFO  - org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+10-03-2020 16:59:51.727 - INFO  - org.hibernate.Version.logVersion - HHH000412: Hibernate Core {5.0.12.Final}
+10-03-2020 16:59:51.729 - INFO  - org.hibernate.cfg.Environment.<clinit> - HHH000206: hibernate.properties not found
+10-03-2020 16:59:51.729 - INFO  - org.hibernate.cfg.Environment.buildBytecodeProvider - HHH000021: Bytecode provider name : javassist
+10-03-2020 16:59:51.776 - INFO  - org.hibernate.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10-03-2020 16:59:51.889 - INFO  - org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+10-03-2020 16:59:52.342 - INFO  - org.hibernate.tool.hbm2ddl.SchemaUpdate.execute - HHH000228: Running hbm2ddl schema update
+10-03-2020 16:59:52.623 - INFO  - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+10-03-2020 16:59:53.065 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@10862c5a: startup date [Tue Mar 10 16:59:49 BRT 2020]; root of context hierarchy
+10-03-2020 16:59:53.119 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/boardgame],methods=[POST]}" onto public com.eventos.models.BoardGameInfoDTO com.eventos.controller.BoardgameController.cadastraBoardgame(com.eventos.models.BoardGameInfoDTO)
+10-03-2020 16:59:53.119 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/boardgame],methods=[DELETE]}" onto public com.eventos.models.BoardGameInfoDTO com.eventos.controller.BoardgameController.deletaBoardgame(com.eventos.models.BoardGameInfoDTO)
+10-03-2020 16:59:53.120 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/boardgame/{nome}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.eventos.models.BoardGameInfoDTO>> com.eventos.controller.BoardgameController.boardname(java.lang.String)
+10-03-2020 16:59:53.120 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/boardgame],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.eventos.models.BoardGameInfoDTO>> com.eventos.controller.BoardgameController.listaBoardgames()
+10-03-2020 16:59:53.122 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+10-03-2020 16:59:53.122 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+10-03-2020 16:59:53.147 - INFO  - org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10-03-2020 16:59:53.147 - INFO  - org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10-03-2020 16:59:53.176 - INFO  - org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10-03-2020 16:59:53.343 - INFO  - org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
+10-03-2020 16:59:53.389 - INFO  - org.springframework.jmx.export.annotation.AnnotationMBeanExporter.afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+10-03-2020 16:59:53.405 - INFO  - org.apache.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8081"]
+10-03-2020 16:59:53.412 - INFO  - org.apache.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8081"]
+10-03-2020 16:59:53.425 - INFO  - org.apache.tomcat.util.net.NioSelectorPool.log - Using a shared selector for servlet write/read
+10-03-2020 16:59:53.441 - INFO  - org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start - Tomcat started on port(s): 8081 (http)
+10-03-2020 16:59:53.445 - INFO  - com.eventos.BoardgameApplication.logStarted - Started BoardgameApplication in 4.494 seconds (JVM running for 5.394)
+10-03-2020 16:59:53.446 - INFO  - com.eventos.BoardgameApplication.main - Application Started
+10-03-2020 17:02:44.951 - INFO  - com.eventos.BoardgameApplication.logStarting - Starting BoardgameApplication on TSP3570967 with PID 1776 (C:\Workspace\BoardGameStatus\target\classes started by Administrador in C:\Workspace\BoardGameStatus)
+10-03-2020 17:02:44.956 - INFO  - com.eventos.BoardgameApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+10-03-2020 17:02:45.029 - INFO  - org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@8f9c5d: startup date [Tue Mar 10 17:02:45 BRT 2020]; root of context hierarchy
+10-03-2020 17:02:45.180 - INFO  - org.hibernate.validator.internal.util.Version.<clinit> - HV000001: Hibernate Validator 5.3.5.Final
+10-03-2020 17:02:46.869 - INFO  - org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.initialize - Tomcat initialized with port(s): 8081 (http)
+10-03-2020 17:02:46.879 - INFO  - org.apache.catalina.core.StandardService.log - Starting service [Tomcat]
+10-03-2020 17:02:46.880 - INFO  - org.apache.catalina.core.StandardEngine.log - Starting Servlet Engine: Apache Tomcat/8.5.20
+10-03-2020 17:02:46.974 - INFO  - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+10-03-2020 17:02:46.975 - INFO  - org.springframework.web.context.ContextLoader.prepareEmbeddedWebApplicationContext - Root WebApplicationContext: initialization completed in 1946 ms
+10-03-2020 17:02:47.093 - INFO  - org.springframework.boot.web.servlet.ServletRegistrationBean.onStartup - Mapping servlet: 'dispatcherServlet' to [/]
+10-03-2020 17:02:47.096 - INFO  - org.springframework.boot.web.servlet.FilterRegistrationBean.configure - Mapping filter: 'characterEncodingFilter' to: [/*]
+10-03-2020 17:02:47.096 - INFO  - org.springframework.boot.web.servlet.FilterRegistrationBean.configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+10-03-2020 17:02:47.097 - INFO  - org.springframework.boot.web.servlet.FilterRegistrationBean.configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+10-03-2020 17:02:47.097 - INFO  - org.springframework.boot.web.servlet.FilterRegistrationBean.configure - Mapping filter: 'requestContextFilter' to: [/*]
+10-03-2020 17:02:47.125 - INFO  - org.springframework.jdbc.datasource.DriverManagerDataSource.setDriverClassName - Loaded JDBC driver: com.mysql.jdbc.Driver
+10-03-2020 17:02:47.447 - INFO  - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory - Building JPA container EntityManagerFactory for persistence unit 'default'
+10-03-2020 17:02:47.456 - INFO  - org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+10-03-2020 17:02:47.515 - INFO  - org.hibernate.Version.logVersion - HHH000412: Hibernate Core {5.0.12.Final}
+10-03-2020 17:02:47.516 - INFO  - org.hibernate.cfg.Environment.<clinit> - HHH000206: hibernate.properties not found
+10-03-2020 17:02:47.517 - INFO  - org.hibernate.cfg.Environment.buildBytecodeProvider - HHH000021: Bytecode provider name : javassist
+10-03-2020 17:02:47.558 - INFO  - org.hibernate.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10-03-2020 17:02:47.640 - INFO  - org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+10-03-2020 17:02:48.042 - INFO  - org.hibernate.tool.hbm2ddl.SchemaUpdate.execute - HHH000228: Running hbm2ddl schema update
+10-03-2020 17:02:48.369 - INFO  - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+10-03-2020 17:02:48.843 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@8f9c5d: startup date [Tue Mar 10 17:02:45 BRT 2020]; root of context hierarchy
+10-03-2020 17:02:48.897 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/boardgame],methods=[POST]}" onto public com.eventos.models.BoardGameInfoDTO com.eventos.controller.BoardgameController.cadastraBoardgame(com.eventos.models.BoardGameInfoDTO)
+10-03-2020 17:02:48.898 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/boardgame],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.eventos.models.BoardGameInfoDTO>> com.eventos.controller.BoardgameController.listaBoardgames()
+10-03-2020 17:02:48.899 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/boardgame/{nome}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.eventos.models.BoardGameInfoDTO>> com.eventos.controller.BoardgameController.boardname(java.lang.String)
+10-03-2020 17:02:48.899 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/boardgame],methods=[DELETE]}" onto public com.eventos.models.BoardGameInfoDTO com.eventos.controller.BoardgameController.deletaBoardgame(com.eventos.models.BoardGameInfoDTO)
+10-03-2020 17:02:48.901 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+10-03-2020 17:02:48.902 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+10-03-2020 17:02:48.929 - INFO  - org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10-03-2020 17:02:48.930 - INFO  - org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10-03-2020 17:02:48.969 - INFO  - org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10-03-2020 17:02:49.242 - INFO  - org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
+10-03-2020 17:02:49.290 - INFO  - org.springframework.jmx.export.annotation.AnnotationMBeanExporter.afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+10-03-2020 17:02:49.315 - INFO  - org.apache.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8081"]
+10-03-2020 17:02:49.324 - INFO  - org.apache.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8081"]
+10-03-2020 17:02:49.335 - INFO  - org.apache.tomcat.util.net.NioSelectorPool.log - Using a shared selector for servlet write/read
+10-03-2020 17:02:49.357 - INFO  - org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start - Tomcat started on port(s): 8081 (http)
+10-03-2020 17:02:49.365 - INFO  - com.eventos.BoardgameApplication.logStarted - Started BoardgameApplication in 4.67 seconds (JVM running for 5.542)
+10-03-2020 17:02:49.365 - INFO  - com.eventos.BoardgameApplication.main - Application Started
+10-03-2020 17:03:06.973 - INFO  - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log - Initializing Spring FrameworkServlet 'dispatcherServlet'
+10-03-2020 17:03:06.973 - INFO  - org.springframework.web.servlet.DispatcherServlet.initServletBean - FrameworkServlet 'dispatcherServlet': initialization started
+10-03-2020 17:03:06.993 - INFO  - org.springframework.web.servlet.DispatcherServlet.initServletBean - FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+10-03-2020 17:03:07.034 - INFO  - org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService - HHH000397: Using ASTQueryTranslatorFactory
+10-03-2020 17:04:39.671 - INFO  - com.eventos.BoardgameApplication.logStarting - Starting BoardgameApplication on TSP3570967 with PID 9408 (C:\Workspace\BoardGameStatus\target\classes started by Administrador in C:\Workspace\BoardGameStatus)
+10-03-2020 17:04:39.675 - INFO  - com.eventos.BoardgameApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+10-03-2020 17:04:39.742 - INFO  - org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6170b650: startup date [Tue Mar 10 17:04:39 BRT 2020]; root of context hierarchy
+10-03-2020 17:04:39.863 - INFO  - org.hibernate.validator.internal.util.Version.<clinit> - HV000001: Hibernate Validator 5.3.5.Final
+10-03-2020 17:04:41.409 - INFO  - org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.initialize - Tomcat initialized with port(s): 8081 (http)
+10-03-2020 17:04:41.419 - INFO  - org.apache.catalina.core.StandardService.log - Starting service [Tomcat]
+10-03-2020 17:04:41.419 - INFO  - org.apache.catalina.core.StandardEngine.log - Starting Servlet Engine: Apache Tomcat/8.5.20
+10-03-2020 17:04:41.508 - INFO  - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+10-03-2020 17:04:41.509 - INFO  - org.springframework.web.context.ContextLoader.prepareEmbeddedWebApplicationContext - Root WebApplicationContext: initialization completed in 1767 ms
+10-03-2020 17:04:41.610 - INFO  - org.springframework.boot.web.servlet.ServletRegistrationBean.onStartup - Mapping servlet: 'dispatcherServlet' to [/]
+10-03-2020 17:04:41.612 - INFO  - org.springframework.boot.web.servlet.FilterRegistrationBean.configure - Mapping filter: 'characterEncodingFilter' to: [/*]
+10-03-2020 17:04:41.613 - INFO  - org.springframework.boot.web.servlet.FilterRegistrationBean.configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+10-03-2020 17:04:41.613 - INFO  - org.springframework.boot.web.servlet.FilterRegistrationBean.configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+10-03-2020 17:04:41.613 - INFO  - org.springframework.boot.web.servlet.FilterRegistrationBean.configure - Mapping filter: 'requestContextFilter' to: [/*]
+10-03-2020 17:04:41.639 - INFO  - org.springframework.jdbc.datasource.DriverManagerDataSource.setDriverClassName - Loaded JDBC driver: com.mysql.jdbc.Driver
+10-03-2020 17:04:41.957 - INFO  - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory - Building JPA container EntityManagerFactory for persistence unit 'default'
+10-03-2020 17:04:41.967 - INFO  - org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+10-03-2020 17:04:42.018 - INFO  - org.hibernate.Version.logVersion - HHH000412: Hibernate Core {5.0.12.Final}
+10-03-2020 17:04:42.020 - INFO  - org.hibernate.cfg.Environment.<clinit> - HHH000206: hibernate.properties not found
+10-03-2020 17:04:42.020 - INFO  - org.hibernate.cfg.Environment.buildBytecodeProvider - HHH000021: Bytecode provider name : javassist
+10-03-2020 17:04:42.052 - INFO  - org.hibernate.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10-03-2020 17:04:42.133 - INFO  - org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+10-03-2020 17:04:42.532 - INFO  - org.hibernate.tool.hbm2ddl.SchemaUpdate.execute - HHH000228: Running hbm2ddl schema update
+10-03-2020 17:04:42.817 - INFO  - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+10-03-2020 17:04:43.269 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6170b650: startup date [Tue Mar 10 17:04:39 BRT 2020]; root of context hierarchy
+10-03-2020 17:04:43.356 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/boardgame],methods=[POST]}" onto public com.eventos.models.BoardGameInfoDTO com.eventos.controller.BoardgameController.cadastraBoardgame(com.eventos.models.BoardGameInfoDTO)
+10-03-2020 17:04:43.357 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/boardgame],methods=[DELETE]}" onto public com.eventos.models.BoardGameInfoDTO com.eventos.controller.BoardgameController.deletaBoardgame(com.eventos.models.BoardGameInfoDTO)
+10-03-2020 17:04:43.358 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/boardgame/{nome}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.eventos.models.BoardGameInfoDTO>> com.eventos.controller.BoardgameController.boardname(java.lang.String)
+10-03-2020 17:04:43.359 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/boardgame],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.eventos.models.BoardGameInfoDTO>> com.eventos.controller.BoardgameController.listaBoardgames()
+10-03-2020 17:04:43.361 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+10-03-2020 17:04:43.362 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+10-03-2020 17:04:43.394 - INFO  - org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10-03-2020 17:04:43.394 - INFO  - org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10-03-2020 17:04:43.423 - INFO  - org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10-03-2020 17:04:43.630 - INFO  - org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
+10-03-2020 17:04:43.683 - INFO  - org.springframework.jmx.export.annotation.AnnotationMBeanExporter.afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+10-03-2020 17:04:43.700 - INFO  - org.apache.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8081"]
+10-03-2020 17:04:43.708 - INFO  - org.apache.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8081"]
+10-03-2020 17:04:43.720 - INFO  - org.apache.tomcat.util.net.NioSelectorPool.log - Using a shared selector for servlet write/read
+10-03-2020 17:04:43.734 - INFO  - org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start - Tomcat started on port(s): 8081 (http)
+10-03-2020 17:04:43.739 - INFO  - com.eventos.BoardgameApplication.logStarted - Started BoardgameApplication in 4.354 seconds (JVM running for 5.282)
+10-03-2020 17:04:43.739 - INFO  - com.eventos.BoardgameApplication.main - Application Started
+10-03-2020 17:06:11.707 - INFO  - com.eventos.BoardgameApplication.logStarting - Starting BoardgameApplication on TSP3570967 with PID 1104 (C:\Workspace\BoardGameStatus\target\classes started by Administrador in C:\Workspace\BoardGameStatus)
+10-03-2020 17:06:11.711 - INFO  - com.eventos.BoardgameApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+10-03-2020 17:06:11.763 - INFO  - org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@10862c5a: startup date [Tue Mar 10 17:06:11 BRT 2020]; root of context hierarchy
+10-03-2020 17:06:11.882 - INFO  - org.hibernate.validator.internal.util.Version.<clinit> - HV000001: Hibernate Validator 5.3.5.Final
+10-03-2020 17:06:13.369 - INFO  - org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.initialize - Tomcat initialized with port(s): 8081 (http)
+10-03-2020 17:06:13.378 - INFO  - org.apache.catalina.core.StandardService.log - Starting service [Tomcat]
+10-03-2020 17:06:13.379 - INFO  - org.apache.catalina.core.StandardEngine.log - Starting Servlet Engine: Apache Tomcat/8.5.20
+10-03-2020 17:06:13.468 - INFO  - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+10-03-2020 17:06:13.468 - INFO  - org.springframework.web.context.ContextLoader.prepareEmbeddedWebApplicationContext - Root WebApplicationContext: initialization completed in 1705 ms
+10-03-2020 17:06:13.578 - INFO  - org.springframework.boot.web.servlet.ServletRegistrationBean.onStartup - Mapping servlet: 'dispatcherServlet' to [/]
+10-03-2020 17:06:13.582 - INFO  - org.springframework.boot.web.servlet.FilterRegistrationBean.configure - Mapping filter: 'characterEncodingFilter' to: [/*]
+10-03-2020 17:06:13.583 - INFO  - org.springframework.boot.web.servlet.FilterRegistrationBean.configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+10-03-2020 17:06:13.583 - INFO  - org.springframework.boot.web.servlet.FilterRegistrationBean.configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+10-03-2020 17:06:13.583 - INFO  - org.springframework.boot.web.servlet.FilterRegistrationBean.configure - Mapping filter: 'requestContextFilter' to: [/*]
+10-03-2020 17:06:13.620 - INFO  - org.springframework.jdbc.datasource.DriverManagerDataSource.setDriverClassName - Loaded JDBC driver: com.mysql.jdbc.Driver
+10-03-2020 17:06:13.723 - INFO  - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory - Building JPA container EntityManagerFactory for persistence unit 'default'
+10-03-2020 17:06:13.734 - INFO  - org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+10-03-2020 17:06:13.789 - INFO  - org.hibernate.Version.logVersion - HHH000412: Hibernate Core {5.0.12.Final}
+10-03-2020 17:06:13.790 - INFO  - org.hibernate.cfg.Environment.<clinit> - HHH000206: hibernate.properties not found
+10-03-2020 17:06:13.791 - INFO  - org.hibernate.cfg.Environment.buildBytecodeProvider - HHH000021: Bytecode provider name : javassist
+10-03-2020 17:06:13.827 - INFO  - org.hibernate.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10-03-2020 17:06:14.050 - INFO  - org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+10-03-2020 17:06:14.419 - INFO  - org.hibernate.tool.hbm2ddl.SchemaUpdate.execute - HHH000228: Running hbm2ddl schema update
+10-03-2020 17:06:14.685 - INFO  - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+10-03-2020 17:06:15.106 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@10862c5a: startup date [Tue Mar 10 17:06:11 BRT 2020]; root of context hierarchy
+10-03-2020 17:06:15.155 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/boardgame],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.eventos.models.BoardGameInfoDTO>> com.eventos.controller.BoardgameController.listaBoardgames()
+10-03-2020 17:06:15.157 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/boardgame/{nome}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.eventos.models.BoardGameInfoDTO>> com.eventos.controller.BoardgameController.boardname(java.lang.String)
+10-03-2020 17:06:15.158 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/boardgame],methods=[DELETE]}" onto public com.eventos.models.BoardGameInfoDTO com.eventos.controller.BoardgameController.deletaBoardgame(com.eventos.models.BoardGameInfoDTO)
+10-03-2020 17:06:15.158 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/boardgame],methods=[POST]}" onto public com.eventos.models.BoardGameInfoDTO com.eventos.controller.BoardgameController.cadastraBoardgame(com.eventos.models.BoardGameInfoDTO)
+10-03-2020 17:06:15.159 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+10-03-2020 17:06:15.160 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+10-03-2020 17:06:15.184 - INFO  - org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10-03-2020 17:06:15.185 - INFO  - org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10-03-2020 17:06:15.212 - INFO  - org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10-03-2020 17:06:15.383 - INFO  - org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
+10-03-2020 17:06:15.426 - INFO  - org.springframework.jmx.export.annotation.AnnotationMBeanExporter.afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+10-03-2020 17:06:15.440 - INFO  - org.apache.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8081"]
+10-03-2020 17:06:15.447 - INFO  - org.apache.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8081"]
+10-03-2020 17:06:15.458 - INFO  - org.apache.tomcat.util.net.NioSelectorPool.log - Using a shared selector for servlet write/read
+10-03-2020 17:06:15.472 - INFO  - org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start - Tomcat started on port(s): 8081 (http)
+10-03-2020 17:06:15.477 - INFO  - com.eventos.BoardgameApplication.logStarted - Started BoardgameApplication in 3.999 seconds (JVM running for 4.928)
+10-03-2020 17:06:15.477 - INFO  - com.eventos.BoardgameApplication.main - Application Started
+10-03-2020 17:08:42.034 - INFO  - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log - Initializing Spring FrameworkServlet 'dispatcherServlet'
+10-03-2020 17:08:42.034 - INFO  - org.springframework.web.servlet.DispatcherServlet.initServletBean - FrameworkServlet 'dispatcherServlet': initialization started
+10-03-2020 17:08:42.054 - INFO  - org.springframework.web.servlet.DispatcherServlet.initServletBean - FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+10-03-2020 17:08:42.098 - INFO  - org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService - HHH000397: Using ASTQueryTranslatorFactory
+10-03-2020 17:08:42.199 - INFO  - com.eventos.controller.BoardgameController.listaBoardgames - GET info[BoardGameInfoDTO{codigo=1, nome='Arcadia Quest', minPlayers='2', maxPlayers='4', anoLancamento='2014', descricao='', publicadora='Galapagos', img='imgjpg'}, BoardGameInfoDTO{codigo=2, nome='Dominion', minPlayers='2', maxPlayers='4', anoLancamento='2008', descricao='', publicadora='999 games', img='img.jpg'}, BoardGameInfoDTO{codigo=23, nome='DDDDD', minPlayers='2', maxPlayers='4', anoLancamento='1999', descricao='aaaa', publicadora='aaaa', img='aaaa'}, BoardGameInfoDTO{codigo=25, nome='kkkkk', minPlayers='2', maxPlayers='4', anoLancamento='1999', descricao='aaaa', publicadora='aaaa', img='aaaa'}, BoardGameInfoDTO{codigo=26, nome='DDDDD', minPlayers='2', maxPlayers='4', anoLancamento='1999', descricao='aaaa', publicadora='aaaa', img='aaaa'}, BoardGameInfoDTO{codigo=27, nome='eeeeeee', minPlayers='2', maxPlayers='4', anoLancamento='1999', descricao='aaaa', publicadora='aaaa', img='aaaa'}]
+10-03-2020 17:10:22.158 - INFO  - com.eventos.BoardgameApplication.logStarting - Starting BoardgameApplication on TSP3570967 with PID 15860 (C:\Workspace\BoardGameStatus\target\classes started by Administrador in C:\Workspace\BoardGameStatus)
+10-03-2020 17:10:22.161 - INFO  - com.eventos.BoardgameApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+10-03-2020 17:10:22.235 - INFO  - org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@11afb339: startup date [Tue Mar 10 17:10:22 BRT 2020]; root of context hierarchy
+10-03-2020 17:10:22.373 - INFO  - org.hibernate.validator.internal.util.Version.<clinit> - HV000001: Hibernate Validator 5.3.5.Final
+10-03-2020 17:10:23.840 - INFO  - org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.initialize - Tomcat initialized with port(s): 8081 (http)
+10-03-2020 17:10:23.850 - INFO  - org.apache.catalina.core.StandardService.log - Starting service [Tomcat]
+10-03-2020 17:10:23.850 - INFO  - org.apache.catalina.core.StandardEngine.log - Starting Servlet Engine: Apache Tomcat/8.5.20
+10-03-2020 17:10:23.940 - INFO  - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+10-03-2020 17:10:23.941 - INFO  - org.springframework.web.context.ContextLoader.prepareEmbeddedWebApplicationContext - Root WebApplicationContext: initialization completed in 1706 ms
+10-03-2020 17:10:24.049 - INFO  - org.springframework.boot.web.servlet.ServletRegistrationBean.onStartup - Mapping servlet: 'dispatcherServlet' to [/]
+10-03-2020 17:10:24.051 - INFO  - org.springframework.boot.web.servlet.FilterRegistrationBean.configure - Mapping filter: 'characterEncodingFilter' to: [/*]
+10-03-2020 17:10:24.052 - INFO  - org.springframework.boot.web.servlet.FilterRegistrationBean.configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+10-03-2020 17:10:24.052 - INFO  - org.springframework.boot.web.servlet.FilterRegistrationBean.configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+10-03-2020 17:10:24.052 - INFO  - org.springframework.boot.web.servlet.FilterRegistrationBean.configure - Mapping filter: 'requestContextFilter' to: [/*]
+10-03-2020 17:10:24.080 - INFO  - org.springframework.jdbc.datasource.DriverManagerDataSource.setDriverClassName - Loaded JDBC driver: com.mysql.jdbc.Driver
+10-03-2020 17:10:24.390 - INFO  - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory - Building JPA container EntityManagerFactory for persistence unit 'default'
+10-03-2020 17:10:24.401 - INFO  - org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+10-03-2020 17:10:24.455 - INFO  - org.hibernate.Version.logVersion - HHH000412: Hibernate Core {5.0.12.Final}
+10-03-2020 17:10:24.457 - INFO  - org.hibernate.cfg.Environment.<clinit> - HHH000206: hibernate.properties not found
+10-03-2020 17:10:24.458 - INFO  - org.hibernate.cfg.Environment.buildBytecodeProvider - HHH000021: Bytecode provider name : javassist
+10-03-2020 17:10:24.496 - INFO  - org.hibernate.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10-03-2020 17:10:24.581 - INFO  - org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+10-03-2020 17:10:24.962 - INFO  - org.hibernate.tool.hbm2ddl.SchemaUpdate.execute - HHH000228: Running hbm2ddl schema update
+10-03-2020 17:10:25.604 - INFO  - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+10-03-2020 17:10:26.120 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@11afb339: startup date [Tue Mar 10 17:10:22 BRT 2020]; root of context hierarchy
+10-03-2020 17:10:26.172 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/boardgame],methods=[POST]}" onto public com.eventos.models.BoardGameInfoDTO com.eventos.controller.BoardgameController.cadastraBoardgame(com.eventos.models.BoardGameInfoDTO)
+10-03-2020 17:10:26.172 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/boardgame],methods=[DELETE]}" onto public com.eventos.models.BoardGameInfoDTO com.eventos.controller.BoardgameController.deletaBoardgame(com.eventos.models.BoardGameInfoDTO)
+10-03-2020 17:10:26.173 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/boardgame],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.eventos.models.BoardGameInfoDTO>> com.eventos.controller.BoardgameController.listaBoardgames()
+10-03-2020 17:10:26.173 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/boardgame/{nome}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.eventos.models.BoardGameInfoDTO>> com.eventos.controller.BoardgameController.boardname(java.lang.String)
+10-03-2020 17:10:26.175 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+10-03-2020 17:10:26.175 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+10-03-2020 17:10:26.200 - INFO  - org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10-03-2020 17:10:26.201 - INFO  - org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10-03-2020 17:10:26.229 - INFO  - org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10-03-2020 17:10:26.411 - INFO  - org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
+10-03-2020 17:10:26.459 - INFO  - org.springframework.jmx.export.annotation.AnnotationMBeanExporter.afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+10-03-2020 17:10:26.478 - INFO  - org.apache.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8081"]
+10-03-2020 17:10:26.487 - INFO  - org.apache.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8081"]
+10-03-2020 17:10:26.499 - INFO  - org.apache.tomcat.util.net.NioSelectorPool.log - Using a shared selector for servlet write/read
+10-03-2020 17:10:26.515 - INFO  - org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start - Tomcat started on port(s): 8081 (http)
+10-03-2020 17:10:26.519 - INFO  - com.eventos.BoardgameApplication.logStarted - Started BoardgameApplication in 4.612 seconds (JVM running for 5.436)
+10-03-2020 17:10:26.519 - INFO  - com.eventos.BoardgameApplication.main - Application Started
+10-03-2020 17:46:04.724 - INFO  - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log - Initializing Spring FrameworkServlet 'dispatcherServlet'
+10-03-2020 17:46:04.729 - INFO  - org.springframework.web.servlet.DispatcherServlet.initServletBean - FrameworkServlet 'dispatcherServlet': initialization started
+10-03-2020 17:46:04.752 - INFO  - org.springframework.web.servlet.DispatcherServlet.initServletBean - FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+10-03-2020 17:46:04.814 - INFO  - org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService - HHH000397: Using ASTQueryTranslatorFactory
+10-03-2020 17:46:42.246 - INFO  - com.eventos.BoardgameApplication.logStarting - Starting BoardgameApplication on TSP3570967 with PID 13276 (C:\Workspace\BoardGameStatus\target\classes started by Administrador in C:\Workspace\BoardGameStatus)
+10-03-2020 17:46:42.249 - INFO  - com.eventos.BoardgameApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+10-03-2020 17:46:42.298 - INFO  - org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@13593d60: startup date [Tue Mar 10 17:46:42 BRT 2020]; root of context hierarchy
+10-03-2020 17:46:42.401 - INFO  - org.hibernate.validator.internal.util.Version.<clinit> - HV000001: Hibernate Validator 5.3.5.Final
+10-03-2020 17:46:44.058 - INFO  - org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.initialize - Tomcat initialized with port(s): 8081 (http)
+10-03-2020 17:46:44.073 - INFO  - org.apache.catalina.core.StandardService.log - Starting service [Tomcat]
+10-03-2020 17:46:44.075 - INFO  - org.apache.catalina.core.StandardEngine.log - Starting Servlet Engine: Apache Tomcat/8.5.20
+10-03-2020 17:46:44.196 - INFO  - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+10-03-2020 17:46:44.197 - INFO  - org.springframework.web.context.ContextLoader.prepareEmbeddedWebApplicationContext - Root WebApplicationContext: initialization completed in 1899 ms
+10-03-2020 17:46:44.318 - INFO  - org.springframework.boot.web.servlet.ServletRegistrationBean.onStartup - Mapping servlet: 'dispatcherServlet' to [/]
+10-03-2020 17:46:44.321 - INFO  - org.springframework.boot.web.servlet.FilterRegistrationBean.configure - Mapping filter: 'characterEncodingFilter' to: [/*]
+10-03-2020 17:46:44.321 - INFO  - org.springframework.boot.web.servlet.FilterRegistrationBean.configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+10-03-2020 17:46:44.322 - INFO  - org.springframework.boot.web.servlet.FilterRegistrationBean.configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+10-03-2020 17:46:44.322 - INFO  - org.springframework.boot.web.servlet.FilterRegistrationBean.configure - Mapping filter: 'requestContextFilter' to: [/*]
+10-03-2020 17:46:44.358 - INFO  - org.springframework.jdbc.datasource.DriverManagerDataSource.setDriverClassName - Loaded JDBC driver: com.mysql.jdbc.Driver
+10-03-2020 17:46:44.675 - INFO  - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory - Building JPA container EntityManagerFactory for persistence unit 'default'
+10-03-2020 17:46:44.685 - INFO  - org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+10-03-2020 17:46:44.754 - INFO  - org.hibernate.Version.logVersion - HHH000412: Hibernate Core {5.0.12.Final}
+10-03-2020 17:46:44.755 - INFO  - org.hibernate.cfg.Environment.<clinit> - HHH000206: hibernate.properties not found
+10-03-2020 17:46:44.756 - INFO  - org.hibernate.cfg.Environment.buildBytecodeProvider - HHH000021: Bytecode provider name : javassist
+10-03-2020 17:46:44.799 - INFO  - org.hibernate.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10-03-2020 17:46:44.917 - INFO  - org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+10-03-2020 17:46:45.322 - INFO  - org.hibernate.tool.hbm2ddl.SchemaUpdate.execute - HHH000228: Running hbm2ddl schema update
+10-03-2020 17:46:45.599 - INFO  - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+10-03-2020 17:46:46.031 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@13593d60: startup date [Tue Mar 10 17:46:42 BRT 2020]; root of context hierarchy
+10-03-2020 17:46:46.083 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/boardgame/internal/{nome}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.eventos.models.BoardGameInfoDTO>> com.eventos.controller.BoardgameController.boardname(java.lang.String)
+10-03-2020 17:46:46.084 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/boardgame],methods=[DELETE]}" onto public com.eventos.models.BoardGameInfoDTO com.eventos.controller.BoardgameController.deletaBoardgame(com.eventos.models.BoardGameInfoDTO)
+10-03-2020 17:46:46.084 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/boardgame/external/(nome)],methods=[GET]}" onto public com.eventos.models.BoardGameInfoDTO com.eventos.controller.BoardgameController.cadastraBoardgame(com.eventos.models.BoardGameInfoDTO)
+10-03-2020 17:46:46.085 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+10-03-2020 17:46:46.086 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+10-03-2020 17:46:46.111 - INFO  - org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10-03-2020 17:46:46.112 - INFO  - org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10-03-2020 17:46:46.140 - INFO  - org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10-03-2020 17:46:46.316 - INFO  - org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
+10-03-2020 17:46:46.369 - INFO  - org.springframework.jmx.export.annotation.AnnotationMBeanExporter.afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+10-03-2020 17:46:46.385 - INFO  - org.apache.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8081"]
+10-03-2020 17:46:46.393 - INFO  - org.apache.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8081"]
+10-03-2020 17:46:46.404 - INFO  - org.apache.tomcat.util.net.NioSelectorPool.log - Using a shared selector for servlet write/read
+10-03-2020 17:46:46.419 - INFO  - org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start - Tomcat started on port(s): 8081 (http)
+10-03-2020 17:46:46.423 - INFO  - com.eventos.BoardgameApplication.logStarted - Started BoardgameApplication in 4.415 seconds (JVM running for 5.454)
+10-03-2020 17:46:46.423 - INFO  - com.eventos.BoardgameApplication.main - Application Started
+10-03-2020 17:46:47.332 - INFO  - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log - Initializing Spring FrameworkServlet 'dispatcherServlet'
+10-03-2020 17:46:47.333 - INFO  - org.springframework.web.servlet.DispatcherServlet.initServletBean - FrameworkServlet 'dispatcherServlet': initialization started
+10-03-2020 17:46:47.361 - INFO  - org.springframework.web.servlet.DispatcherServlet.initServletBean - FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+10-03-2020 17:46:47.420 - INFO  - org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService - HHH000397: Using ASTQueryTranslatorFactory
+10-03-2020 17:47:05.279 - WARN  - org.springframework.web.servlet.PageNotFound.handleHttpRequestMethodNotSupported - Request method 'GET' not supported
+10-03-2020 17:47:05.280 - WARN  - org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver.logException - Resolved exception caused by Handler execution: org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported
+10-03-2020 17:47:07.264 - WARN  - org.springframework.web.servlet.PageNotFound.handleHttpRequestMethodNotSupported - Request method 'GET' not supported
+10-03-2020 17:47:07.265 - WARN  - org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver.logException - Resolved exception caused by Handler execution: org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported
+10-03-2020 17:47:08.294 - WARN  - org.springframework.web.servlet.PageNotFound.handleHttpRequestMethodNotSupported - Request method 'GET' not supported
+10-03-2020 17:47:08.295 - WARN  - org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver.logException - Resolved exception caused by Handler execution: org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported
+10-03-2020 17:47:08.948 - WARN  - org.springframework.web.servlet.PageNotFound.handleHttpRequestMethodNotSupported - Request method 'GET' not supported
+10-03-2020 17:47:08.948 - WARN  - org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver.logException - Resolved exception caused by Handler execution: org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported
+10-03-2020 17:47:10.048 - WARN  - org.springframework.web.servlet.PageNotFound.handleHttpRequestMethodNotSupported - Request method 'GET' not supported
+10-03-2020 17:47:10.049 - WARN  - org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver.logException - Resolved exception caused by Handler execution: org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported
+10-03-2020 17:49:22.567 - INFO  - com.eventos.BoardgameApplication.logStarting - Starting BoardgameApplication on TSP3570967 with PID 18488 (C:\Workspace\BoardGameStatus\target\classes started by Administrador in C:\Workspace\BoardGameStatus)
+10-03-2020 17:49:22.572 - INFO  - com.eventos.BoardgameApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+10-03-2020 17:49:22.623 - INFO  - org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@8f9c5d: startup date [Tue Mar 10 17:49:22 BRT 2020]; root of context hierarchy
+10-03-2020 17:49:22.748 - INFO  - org.hibernate.validator.internal.util.Version.<clinit> - HV000001: Hibernate Validator 5.3.5.Final
+10-03-2020 17:49:24.429 - INFO  - org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.initialize - Tomcat initialized with port(s): 8081 (http)
+10-03-2020 17:49:24.442 - INFO  - org.apache.catalina.core.StandardService.log - Starting service [Tomcat]
+10-03-2020 17:49:24.443 - INFO  - org.apache.catalina.core.StandardEngine.log - Starting Servlet Engine: Apache Tomcat/8.5.20
+10-03-2020 17:49:24.543 - INFO  - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+10-03-2020 17:49:24.543 - INFO  - org.springframework.web.context.ContextLoader.prepareEmbeddedWebApplicationContext - Root WebApplicationContext: initialization completed in 1920 ms
+10-03-2020 17:49:24.660 - INFO  - org.springframework.boot.web.servlet.ServletRegistrationBean.onStartup - Mapping servlet: 'dispatcherServlet' to [/]
+10-03-2020 17:49:24.663 - INFO  - org.springframework.boot.web.servlet.FilterRegistrationBean.configure - Mapping filter: 'characterEncodingFilter' to: [/*]
+10-03-2020 17:49:24.663 - INFO  - org.springframework.boot.web.servlet.FilterRegistrationBean.configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+10-03-2020 17:49:24.664 - INFO  - org.springframework.boot.web.servlet.FilterRegistrationBean.configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+10-03-2020 17:49:24.664 - INFO  - org.springframework.boot.web.servlet.FilterRegistrationBean.configure - Mapping filter: 'requestContextFilter' to: [/*]
+10-03-2020 17:49:24.692 - INFO  - org.springframework.jdbc.datasource.DriverManagerDataSource.setDriverClassName - Loaded JDBC driver: com.mysql.jdbc.Driver
+10-03-2020 17:49:25.049 - INFO  - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory - Building JPA container EntityManagerFactory for persistence unit 'default'
+10-03-2020 17:49:25.063 - INFO  - org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+10-03-2020 17:49:25.125 - INFO  - org.hibernate.Version.logVersion - HHH000412: Hibernate Core {5.0.12.Final}
+10-03-2020 17:49:25.126 - INFO  - org.hibernate.cfg.Environment.<clinit> - HHH000206: hibernate.properties not found
+10-03-2020 17:49:25.127 - INFO  - org.hibernate.cfg.Environment.buildBytecodeProvider - HHH000021: Bytecode provider name : javassist
+10-03-2020 17:49:25.165 - INFO  - org.hibernate.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10-03-2020 17:49:25.255 - INFO  - org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+10-03-2020 17:49:25.620 - INFO  - org.hibernate.tool.hbm2ddl.SchemaUpdate.execute - HHH000228: Running hbm2ddl schema update
+10-03-2020 17:49:25.886 - INFO  - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+10-03-2020 17:49:26.279 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@8f9c5d: startup date [Tue Mar 10 17:49:22 BRT 2020]; root of context hierarchy
+10-03-2020 17:49:26.331 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/boardgame],methods=[DELETE]}" onto public com.eventos.models.BoardGameInfoDTO com.eventos.controller.BoardgameController.deletaBoardgame(com.eventos.models.BoardGameInfoDTO)
+10-03-2020 17:49:26.331 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/boardgame],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.eventos.models.BoardGameInfoDTO>> com.eventos.controller.BoardgameController.listaBoardgames()
+10-03-2020 17:49:26.332 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/boardgame/internal/{nome}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.eventos.models.BoardGameInfoDTO>> com.eventos.controller.BoardgameController.boardname(java.lang.String)
+10-03-2020 17:49:26.332 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/boardgame],methods=[POST]}" onto public com.eventos.models.BoardGameInfoDTO com.eventos.controller.BoardgameController.cadastraBoardgame(com.eventos.models.BoardGameInfoDTO)
+10-03-2020 17:49:26.333 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+10-03-2020 17:49:26.334 - INFO  - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+10-03-2020 17:49:26.359 - INFO  - org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10-03-2020 17:49:26.359 - INFO  - org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10-03-2020 17:49:26.386 - INFO  - org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10-03-2020 17:49:26.587 - INFO  - org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
+10-03-2020 17:49:26.634 - INFO  - org.springframework.jmx.export.annotation.AnnotationMBeanExporter.afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+10-03-2020 17:49:26.653 - INFO  - org.apache.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8081"]
+10-03-2020 17:49:26.664 - INFO  - org.apache.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8081"]
+10-03-2020 17:49:26.676 - INFO  - org.apache.tomcat.util.net.NioSelectorPool.log - Using a shared selector for servlet write/read
+10-03-2020 17:49:26.693 - INFO  - org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start - Tomcat started on port(s): 8081 (http)
+10-03-2020 17:49:26.702 - INFO  - com.eventos.BoardgameApplication.logStarted - Started BoardgameApplication in 4.339 seconds (JVM running for 5.159)
+10-03-2020 17:49:26.702 - INFO  - com.eventos.BoardgameApplication.main - Application Started
+10-03-2020 17:49:33.255 - INFO  - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log - Initializing Spring FrameworkServlet 'dispatcherServlet'
+10-03-2020 17:49:33.255 - INFO  - org.springframework.web.servlet.DispatcherServlet.initServletBean - FrameworkServlet 'dispatcherServlet': initialization started
+10-03-2020 17:49:33.275 - INFO  - org.springframework.web.servlet.DispatcherServlet.initServletBean - FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+10-03-2020 17:49:33.320 - INFO  - org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService - HHH000397: Using ASTQueryTranslatorFactory
+10-03-2020 17:49:33.404 - INFO  - com.eventos.controller.BoardgameController.listaBoardgames - GET info[BoardGameInfoDTO{codigo=1, nome='Arcadia Quest', minPlayers='2', maxPlayers='4', anoLancamento='2014', descricao='', publicadora='Galapagos', img='imgjpg'}, BoardGameInfoDTO{codigo=2, nome='Dominion', minPlayers='2', maxPlayers='4', anoLancamento='2008', descricao='', publicadora='999 games', img='img.jpg'}, BoardGameInfoDTO{codigo=23, nome='DDDDD', minPlayers='2', maxPlayers='4', anoLancamento='1999', descricao='aaaa', publicadora='aaaa', img='aaaa'}, BoardGameInfoDTO{codigo=25, nome='kkkkk', minPlayers='2', maxPlayers='4', anoLancamento='1999', descricao='aaaa', publicadora='aaaa', img='aaaa'}, BoardGameInfoDTO{codigo=26, nome='DDDDD', minPlayers='2', maxPlayers='4', anoLancamento='1999', descricao='aaaa', publicadora='aaaa', img='aaaa'}, BoardGameInfoDTO{codigo=27, nome='eeeeeee', minPlayers='2', maxPlayers='4', anoLancamento='1999', descricao='aaaa', publicadora='aaaa', img='aaaa'}]
