@@ -14,10 +14,21 @@ public class ApiGame {
     @JsonProperty("max_players")
     private Integer maxPlayers;
     private String description;
-//    @JsonProperty("primary_publisher")
-//    private String primaryPublisher;
+    @JsonProperty("primary_publisher")
+    private PrimaryPublisher primaryPublisher;
+    @JsonProperty("images")
+    private ApiGameImages apiGameImages;
 
-//    private ApiGameImages apiGameImages;
+
+    public ApiGameImages getApiGameImages() {
+        return apiGameImages;
+    }
+
+    public void setApiGameImages(ApiGameImages apiGameImages) {
+        this.apiGameImages = apiGameImages;
+    }
+
+
 
     public String getName() {
         return name;

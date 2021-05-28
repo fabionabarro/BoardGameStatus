@@ -1,10 +1,19 @@
 package com.eventos.models;
 
 public class ApiGameImages {
+    private String thumb;
     private String small;
     private String medium;
     private String large;
     private String original;
+
+    public String getThumb() {
+        return thumb;
+    }
+
+    public void setThumb(String thumb) {
+        this.thumb = thumb;
+    }
 
     public String getSmall() {
         return small;

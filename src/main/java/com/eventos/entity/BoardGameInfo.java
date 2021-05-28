@@ -3,6 +3,9 @@ package com.eventos.entity;
 import javax.persistence.*;
 
 import com.eventos.models.BoardGameInfoDTO;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import org.hibernate.validator.constraints.NotBlank;
 
 @Entity

@@ -1,30 +1,21 @@
 package com.eventos.service;
 
-import com.eventos.controller.BoardgameController;
-import com.eventos.entity.BoardGameInfoExterno;
+
 import com.eventos.entity.BoardGameInfo;
-import com.eventos.models.ApiGame;
+
 import com.eventos.models.BoardGameApiExternaDTO;
 import com.eventos.models.BoardGameInfoDTO;
 import com.eventos.repository.BoardGameRepository;
 import com.eventos.repository.BoardGameRepositoryBga;
-import com.eventos.resources.ParameterStringBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
-
-import java.io.DataOutputStream;
 import java.io.IOException;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
+
 
 @Service
 public class BoardGameService {
